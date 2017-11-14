@@ -4,5 +4,5 @@
 
 ## Instructions on how to push changes from terminal
 + `git add --all`
-+ `git commit -m "<COMMIT MESSAGE>"
++ `git commit -m "<COMMIT MESSAGE>"`
 + `git push`
