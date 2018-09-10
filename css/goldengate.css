@@ -1,0 +1,23 @@
+.intro-title h1,
+.intro-title h3,
+.intro-description p {
+    color: white;
+}
+
+.special {
+    color: #FFB9B4;
+}
+.special:hover {
+    color: #FFD6D4;
+}
+
+.special-active {
+    color: white;
+}
+.special-active:hover {
+    color: white;
+}
+
+.intro-section {
+    background-color: #FF847B;
+}

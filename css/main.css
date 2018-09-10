@@ -1,0 +1,383 @@
+html {
+    height: 100%;
+    font-family: 'SegoeUI';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'SegoeUI';
+    src: url('../img/fonts/segoeui.woff') format('woff');
+}
+@font-face {
+    font-weight: lighter;
+    font-style: normal;
+    font-family: 'SegoeUI';
+    src: url('../img/fonts/segoeuil.woff') format('woff');
+}
+@font-face {
+    font-weight: 600; /* Semibold */
+    font-style: normal;
+    font-family: 'SegoeUI';
+    src: url('../img/fonts/seguisb.woff') format('woff');
+}
+@font-face {
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'SegoeUI';
+    src: url('../img/fonts/segoeuib.woff') format('woff');
+}
+
+.navbar {
+    width: 100%;
+    background: none;
+    position: fixed;
+    box-sizing: border-box;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    -webkit-transition:      background-color 200ms;
+         -o-transition:      background-color 200ms;
+            transition:      background-color 200ms;
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 0.2rem 1.2rem 0.2rem;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.navbar-brand a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand-color {
+    color: #505050;
+}
+.navbar-brand-color:hover {
+    color: #858585;
+}
+
+.navbar-brand a img {
+    height: 2.4rem;
+    margin-right: 20px;
+}
+
+.navigation {
+    margin-left: auto;
+}
+
+.navigation-link {
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-right: 5vw;
+    display: inline-block;
+}
+
+.nav-link-color {
+    color: #626262;
+}
+.nav-link-active-color {
+    color: #f34e24;
+}
+.nav-link-color:hover,
+.nav-link-active-color:hover {
+    color: #fa6540;
+}
+
+.navigation-link i {
+    font-size: 0.75em;
+}
+
+.navigation-link:last-child {
+    margin-right: 0;
+}
+
+.navigation-link:hover,
+.navigation-link.active:hover {
+    text-decoration: underline;
+}
+
+.navigation-link.active {
+    font-weight: 600;
+}
+
+*,
+*::before,
+*::after { 
+  box-sizing: border-box;
+}
+
+.link {
+    opacity:1;
+    text-decoration:none;
+    -webkit-transition:color .15s ease-in;
+    transition:color .15s ease-in
+}
+.link:active,
+.link:focus,
+.link:hover,
+.link:visited {
+    opacity:.8;
+    text-decoration:none;
+    -webkit-transition:color .15s ease-in;
+    transition:color .15s ease-in
+}
+.link--underline {
+    text-decoration:underline !important
+}
+.link--underline-hover:focus,
+.link--underline-hover:hover {
+    text-decoration:underline
+}
+
+.cards-container {
+    background: rgb(255, 255, 255);
+    padding: 15vh 12vw 0 12vw;
+}
+  
+.card-image {
+    max-width: 100%;
+}
+
+.card {
+    padding-bottom: 20px;
+}
+
+.card img {
+    display: block;
+    border-radius: 3px;
+}
+
+@media screen and (min-width: 600px) {
+    .cards-grid {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .card {
+        width: calc(100% / 2.05);
+        padding-bottom: calc(100 - (100% / 2.05 * 2));
+    }
+
+    .content {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .card {
+        width: calc(100% / 3.2);
+    }
+}
+
+/* Credit: https://codepen.io/jasonheecs/pen/GNNwpZ */
+.card-link {
+    transition: transform .3s;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+}
+.card-link::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+    content: '';
+    opacity: 0;
+    z-index: -1;
+}
+.card-link:hover, .card-link:focus {
+    transform: scale3d(1.006, 1.006, 1);
+}
+.card-link:hover::after, .card-link:focus::after {
+    opacity: 1;
+}
+
+.container {
+    width: 100%;
+    max-width: 1012px;
+    /* background: red; */
+}
+
+.project-container {
+    position: relative;
+    padding-top: 60px;
+}
+
+.pictures-container {
+    background: white;
+    width: 65%;
+    overflow: overlay;
+}
+
+.pictures-container img {
+    max-width: 100%;
+}
+
+.description-container {
+    width: 30%;
+    position: sticky;
+    top: 100px;
+    align-self: flex-start;
+}
+
+.description-header h2 {
+    margin: 10px 0;
+}
+
+.description-subtitle {
+    margin-bottom: 10px;
+}
+
+.description-subtitle span {
+    font-size: 18px;
+}
+
+.content {
+    padding-left: 80px;
+    padding-right: 80px;
+    height: 100%;
+}
+
+/*
+    ARTICLES
+*/
+.articles-container {
+    width: 100%;
+}
+
+.article-item {
+    display: flex;
+    justify-content: flex-start;
+    background: red;
+}
+
+.article-text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 80%;
+    padding: 40px;
+}
+
+.article-title,
+.article-subtitle,
+.article-description {
+    margin: 0;
+}
+
+.article-title {
+    font-weight: 600;
+}
+.article-subtitle {
+    font-weight: normal;
+    font-style: italic;
+    margin: 0.7rem 0;
+}
+.article-description {
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+.article-item img {
+    max-width: 20%;
+    width: 20%;
+}
+
+/* Intro Section */
+
+.intro-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+.intro-title {
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+}
+.intro-title h1 { 
+    font-size: 3rem;
+    margin: 0;
+}
+.intro-title h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.intro-image {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.intro-image-wrapper {
+    width: 80%;
+}
+
+.intro-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.intro-description p {
+    margin: 0;
+    text-align: center;
+}
+
+.project-subtitle {
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 0;
+}
+.project-paragraph {
+    margin-bottom: 60px;
+}
+
+.project-image {
+    max-width: 100%;
+}
+
+.white {
+    color: white;
+}
+.white:hover {
+    color: white;
+}
+
+.first-section {
+    padding-top: 140px;
+}

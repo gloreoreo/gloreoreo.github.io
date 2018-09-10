@@ -1,69 +1,69 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Gloria Wang's Portfolio</title>
-        
-        <!-- css -->
-        <link rel = "stylesheet" type = "text/css" href = "main.css" /> 
+        <title>Gloria Wang</title>
+
+        <!-- assets -->
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     </head>
+
     <body>
-        <div id= "whitebox" class= "white"></div>
-
-        <h1 id="name">
-            Hi! My name is Gloria Wang.
-        </h1>
-                
-        <h2 id="uiux">
-            I'm a UI/UX Designer.
-        </h2>
-
-        <!-- about page and other tabs here on -->
-        <div id="res">
-            <h3 id="resume">
-                <a target="_blank" href="https://drive.google.com/file/d/1pbo1ueMcGbYtq1Z1qCdV_qyTBrrajNCm/view?usp=sharing" id="resume1">
-                    <i class="fa fa-file-o" id="resu" aria-hidden="true"></i>
-                    resumé
-                </a>
-            </h3>
+        <div class="navbar">
+            <div class="navbar-content container">
+                <div class="navbar-brand">
+                    <a href="index.html" class="navbar-brand-color">
+                        <img src="img/logo2k17.svg">
+                        GLORIA WANG
+                    </a>
+                </div>
+                <div class="navigation">
+                    <a href="index.html" class="navigation-link active nav-link-active-color">
+                        portfolio
+                    </a>
+                    <a href="https://drive.google.com/file/d/1TAI1N0cplbAtcGzc1q4x6CfVFKL3qy7e/view" class="navigation-link nav-link-color" target="_blank">
+                        resume
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a href="articles.html" class="navigation-link nav-link-color">
+                        featured articles
+                    </a>
+                    <a href="contact.html" class="navigation-link nav-link-color">
+                        contact
+                    </a>
+                </div>
+            </div>
         </div>
 
-        <div id="por">
-            <h3 id="portfolio">
-                <a target="_blank" href="https://drive.google.com/file/d/1HhKepydTZ5AADRNMdaB9hUZcFRnyEEnn/view?usp=sharing" id="portfolio1" target="_blank">
-                    <i class="fa fa-address-book-o" id= "port" aria-hidden="true"></i>
-                    portfolio
-                </a>
-            </h3>
+        <div class="container content first-section">
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-link">
+                        <a href="projects/goldengate.html" class="card-link">
+                            <img src="img/portfolio1.png" class="card-image">
+                        </a>                        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-link">
+                        <a href="projects/trackit.html" class="card-link">
+                            <img src="img/portfolio2.png" class="card-image">
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-link">
+                        <a href="projects/shopnavi.html" class="card-link">
+                            <img src="img/portfolio3.png" class="card-image">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div id= "con">
-            <h3 id="contact">
-                <a href="mailto:gwang13@illinois.edu" id="contact1">
-                    <i class="fa fa-envelope-o" id= "cont" aria-hidden="true"></i>
-                    contact me @ gwang13@illinois.edu
-                </a>
-            </h3>
-        </div>
-
-
-
-        <div id= "linkedin">
-            <a href="https://www.linkedin.com/in/gloria-wang-6237a073/" target="_blank">
-                <i class="fa fa-linkedin fa-2x" width= "20px" height= "20px" id="link" aria-hidden="true"></i>
-            </a>
-        </div>
-
-
-        <!--FOOTER BEGINS -->
-        <div class= "footer" id="footer">
-
-            <i class="fa fa-code" aria-hidden="true"></i>
-            and 
-            <i class="fa fa-heart" aria-hidden="true"></i>
-            by Gloria Wang
-        </div>
+        <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+              crossorigin="anonymous"></script>
     </body>
-    
-    <script type="text/javascript" src="jquery-1.8.3.js"></script>
-    <script src="https://use.fontawesome.com/f3c52b2b47.js"></script>
 </html>
