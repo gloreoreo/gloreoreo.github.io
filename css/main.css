@@ -17,6 +17,10 @@ p {
     font-size: 1.1rem;
 }
 
+a:hover {
+    cursor: pointer;
+}
+
 @font-face {
     font-weight: normal;
     font-style: normal;
@@ -268,22 +272,24 @@ p {
 /*
     ARTICLES
 */
-.articles-container {
-    width: 100%;
+.article-link {
+    width: auto;
+    margin-left: 40px;
+    text-decoration: none;
 }
 
 .article-item {
     display: flex;
     justify-content: flex-start;
-    background: red;
+    /* background: red; */
+    margin-bottom: 40px;
 }
 
 .article-text-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 80%;
-    padding: 40px;
+    color: #505050;
 }
 
 .article-title,
@@ -292,8 +298,18 @@ p {
     margin: 0;
 }
 
+.article-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    display: block;
+    width: 200px;
+    border-radius: 3px;
+}
+
 .article-title {
     font-weight: 600;
+    font-size: 1.6rem;
 }
 .article-subtitle {
     font-weight: normal;
@@ -307,7 +323,11 @@ p {
 
 .article-item img {
     max-width: 20%;
-    width: 20%;
+    border-radius: 3px; 
+}
+
+.article-text-content:hover .article-title {
+    color: #fa6540;
 }
 
 /* Intro Section */
@@ -380,4 +400,14 @@ p {
 
 .first-section {
     padding-top: 140px;
+}
+
+.contact-section {
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-weight: 600;
+    color: #505050;
+    font-size: 1.5rem;
 }
