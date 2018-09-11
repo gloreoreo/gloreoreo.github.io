@@ -427,3 +427,13 @@ footer a {
 footer a:hover {
     color: #fa6540;
 }
+
+.inline-image-section {
+    display: flex;
+    align-items: center;
+}
+
+.inline-image-section .text {
+    max-width: 60%;
+    margin-right: 40px;
+}
