@@ -21,6 +21,11 @@ a:hover {
     cursor: pointer;
 }
 
+hr {
+    visibility: hidden;
+    margin: 20px 0;
+}
+
 @font-face {
     font-weight: normal;
     font-style: normal;
@@ -67,7 +72,8 @@ a:hover {
 
 .navbar-brand {
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    letter-spacing: 2px;
 }
 
 .navbar-brand a {
@@ -84,7 +90,7 @@ a:hover {
 }
 
 .navbar-brand a img {
-    height: 2.4rem;
+    height: 1.7rem;
     margin-right: 20px;
 }
 
@@ -94,7 +100,7 @@ a:hover {
 
 .navigation-link {
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.15em;
     font-weight: 500;
     margin-right: 40px;
     display: inline-block;
@@ -234,16 +240,6 @@ a:hover {
     padding-top: 60px;
 }
 
-.pictures-container {
-    background: white;
-    width: 65%;
-    overflow: overlay;
-}
-
-.pictures-container img {
-    max-width: 100%;
-}
-
 .description-container {
     width: 30%;
     position: sticky;
@@ -314,11 +310,11 @@ a:hover {
 .article-subtitle {
     font-weight: normal;
     font-style: italic;
-    margin: 0.7rem 0;
+    margin: 0.2rem 0;
 }
 .article-description {
     font-weight: normal;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .article-item img {
@@ -383,8 +379,11 @@ a:hover {
     font-style: italic;
     line-height: 0;
 }
-.project-paragraph {
-    margin-bottom: 60px;
+
+.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .project-image {
@@ -409,5 +408,22 @@ a:hover {
 .contact-section h1 {
     font-weight: 600;
     color: #505050;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+}
+
+footer {
+    width: 100%;
+    margin-top: 140px;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+footer a {
+    color: rgb(187, 187, 187);
+    padding: 40px 0;
+}
+
+footer a:hover {
+    color: #fa6540;
 }
