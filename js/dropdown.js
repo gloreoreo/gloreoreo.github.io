@@ -1,6 +1,5 @@
 // Ref: https://gist.github.com/AndrewBarba/5477454
-jQuery.fn.touchClick = function(fnc)
-{
+jQuery.fn.touchClick = function(fnc) {
     if (fnc) {
         this.bind("touchend click",function(event){
             event.stopPropagation();
