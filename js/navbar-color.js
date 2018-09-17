@@ -6,15 +6,15 @@ $(document).scroll(() => {
     if (scrollPos < project_section) {
         $('.navbar').css('background-color', $('.intro-section').css('background-color'))
         $('.navbar-brand a').addClass('white')
-        $('.navigation-link').addClass('special')
-        $('.active').addClass('special-active')
+        $('.navigation .navigation-link').addClass('special')
+        $('.navigation .active').addClass('special-active')
     } else {
         $('.navbar').css('background-color', 'white')
         $('.navbar-brand a').removeClass('white')
         $('.navbar-brand a').addClass('navbar-brand-color')
-        $('.navigation-link').removeClass('special')
-        $('.navigation-link').addClass('nav-link-color')
-        $('.active').removeClass('special-active')
-        $('.active').addClass('nav-link-active-color')
+        $('.navigation .navigation-link').removeClass('special')
+        $('.navigation .navigation-link').addClass('nav-link-color')
+        $('.navigation .active').removeClass('special-active')
+        $('.navigation .active').addClass('nav-link-active-color')
     }
 })
