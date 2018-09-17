@@ -575,7 +575,8 @@ footer a:hover {
     min-width: 180px;
     width: auto;
     z-index: 10;
-    right: 0;
+    right: -10px;
+    top: 40px;
     border-radius: 3px;
     border: 1px solid rgba(0, 0, 0, 0.05);
     background: white;
