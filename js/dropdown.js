@@ -2,6 +2,9 @@
 const container = $('.dropdown-menu')
 const hamburger = $('.dropdown i')
 $(document).on('click touchstart', (e) => {
+  e.stopPropagation()
+  e.preventDefault()
+  
   const hamburgerIsTarget = hamburger.is(e.target)
   if (hamburgerIsTarget) {
     container.toggle()
