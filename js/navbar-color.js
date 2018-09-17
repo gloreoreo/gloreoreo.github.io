@@ -3,7 +3,7 @@ const project_section = $('.project-container').offset().top
 
 $(document).scroll(() => {
     const scrollPos = $(document).scrollTop();
-    if (scrollPos >= intro_section && scrollPos < project_section) {
+    if (scrollPos < project_section) {
         $('.navbar').css('background-color', $('.intro-section').css('background-color'))
         $('.navbar-brand a').addClass('white')
         $('.navigation-link').addClass('special')
