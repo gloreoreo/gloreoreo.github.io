@@ -1,4 +1,5 @@
 // Ref: https://gist.github.com/AndrewBarba/5477454
+/*
 jQuery.fn.touchClick = function(fnc) {
     if (fnc) {
         this.bind("touchend click",function(event){
@@ -14,11 +15,11 @@ jQuery.fn.touchClick = function(fnc) {
     } else {
         this.trigger("click");
     }
-}
+}*/
 
 const container = $('.dropdown-menu')
 const hamburger = $('.dropdown i')
-$(document).touchClick((e) => {
+$(document).click((e) => {
   const hamburgerIsTarget = hamburger.is(e.target)
   if (hamburgerIsTarget) {
     console.log("hamburger")
