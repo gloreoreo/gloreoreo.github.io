@@ -469,7 +469,7 @@ hr {
     font-size: 1.4rem;
     font-weight: 600;
     font-style: italic;
-    line-height: 0;
+    margin-bottom: 0;
 }
 
 .image-container {
