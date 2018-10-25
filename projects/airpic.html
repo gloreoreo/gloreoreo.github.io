@@ -5,8 +5,8 @@
 
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <!-- For testing locally -->
-<!--        <base href="file:///Users/gloriawang/Desktop/gloreoreo.github.io/" >-->
-        <base href="/"> 
+        <!-- <base href="file:///Users/gloriawang/Desktop/gloreoreo.github.io/" > -->
+        <base href="/">
 
         <!-- assets -->
         <link rel="stylesheet" type="text/css" href="css/main.css" />
@@ -154,30 +154,37 @@
             <hr>
             <h4 class="project-subtitle">The Aeration Slider</h4>
             <p class="project-paragraph">
-                The Aeration slider was also a huge problem for users, as sliding it somehow changed a category, then within that category you used the slider to choose a category within that category (it already doesn't make sense to explain it). I need to come up with a solution that deals with organizing information in this sense. <br><hr> Think of the information this way. I needed to create an interactive question that allowed me to organize the information, as in the image below. The big bucket is generally, the topic: Aeration, in this case. The orange buckets are the separate categories within aeration, for example, cooling, drying, natural air drying, etc. Once a category is selected, you can then select an item to finally answer the question of "how is your grain bin is aerated?". This process of thinking is represented by the lower left corner of the page I had sketched, above, as well as visualized in the graphic, below.
+                The Aeration Slider was also a huge problem for users, as sliding it somehow changed a category, then within that category you used the slider to choose an item within that category (it already doesn't make sense to explain it, so I included the graphic below to help). I needed to come up with a solution that dealt with organizing information in this sense.
+            </p>
+            <p class="project-paragraph">
+                Think of the information this way: I needed to create an interactive question that allowed me to organize the information, as in the image below. The big bucket is, generally, the topic: Aeration, in this case. The orange buckets are the separate categories within Aeration, i.e. cooling, drying, natural air drying, etc. Once a category is selected, you can then select an item to finally answer the question of "how is my grain bin aerated?". This process of thinking is represented by the lower left corner of the page I had sketched above, as well as visualized in the graphic below.
             </p>
             <hr>
-            <img src="img/airpic/bucket.jpg" class="project-image">
+            <img src="img/airpic/bucket.jpg" class="project-image" style="width: 100%;">
             <hr>
-            <h4 class="project-subtitle">Ambiguity.</h4>
-            <p>
-                Especially in the user case of "Madeline Fischer", our second persona, looking at AirPic gave a lot of questions on what the "question" meant. "Frequency"? Are we talking about the fan, or the grain bin running the fans? "Peak Angle"? What's the difference between Peaked and Leveled, and where does that happen? Are they talking about the roof? Brad Lott had told me,
-                <hr><br>
-                "We get more IT calls per month about AirPic and what the heck it meant, than people actually successfully using it!"
-                <hr><br>
+            <h4 class="project-subtitle">Ambiguity</h4>
+            <p class="project-paragraph">
+                Especially in the user case of "Madeline Fischer", our second persona, looking at AirPic posed a lot of questions on what the "question" meant. "Frequency"? Are we talking about the fan, or the grain bin running the fans? "Peak Angle"? What's the difference between Peaked and Leveled, and where does that happen? Are they talking about the roof? Brad Lott had told me,
+            </p>
+            <hr>
+            <p class="project-paragraph">
+                <i>"We get more IT calls per month about AirPic and what the heck it meant, than people actually successfully using it!"</i>
+            </p>
+            <hr>
+            <p class="project-paragraph">
                 Around 70% of the participants <i>immediately</i> commented about the ambiguity of the questions asked in the original version of AirPic upon interview.
             </p>
             <hr>
-            <h4 class="project-subtitle">The Ultimate Goal:</h4>
+            <h4 class="project-subtitle">The Ultimate Goal</h4>
             <p>
-                Create an interface where the user will clearly be able to notice the web app comes with two main functions, be able to differentiate information input for fans vs. bins, transform the Aeration slider to become more understandable, and to minimize ambiguity, or completely eliminate ambiguity, if possible.
+                Create an interface where the user will clearly be able to notice the web app comes with two main functions: being an air stream simulator and being a quote generator. Other goals include being able to differentiate information input for fans vs. bins, transform the Aeration slider to become more understandable, and to minimize or completely remove ambiguity, if possible.
             </p>
             <hr>
-            <hr>
-            <h4 class="project-subtitle">Usability Testing : Aeration Slider</h4>
+            <h4 class="project-subtitle">Usability Testing: Aeration Slider</h4>
             <p class="project-paragraph">
                 Keeping that "Bucket" organization in mind, what are ways to express conditional options in a contained way? I came up with two options: a dropdown + selection option, and an accordion menu-type option. You can explore these prototypes by clicking on the images below. I've replaced the technical terms with "types of animals" and "animal breeds" to have a fair, easy-to-understand prototype focused on just testing the usability, and not the content.
             </p>
+            <hr>
             <a href="https://projects.invisionapp.com/share/4ROKHA82XJB#/screens/325474679_UTAeration_Dropdownhome" target="_blank">
                 <img src="img/airpic/ut.jpg" class="project-image" style="width: 100%;">
             </a>
@@ -185,49 +192,54 @@
             <a href="https://projects.invisionapp.com/share/DEOKHH4XVS6#/screens/325477281_UTAeration_DropHOME" target="_blank">
                 <img src="img/airpic/ut2.jpg" class="project-image" style="width: 100%;">
             </a>
+            <hr>
             <p class="project-paragraph">
                 The ultimate result of this test was that the drop-down + selection option (option 1) was overwhelmingly the preferred interaction among our target user volunteers.
             </p>
             <hr> <hr>
-            <h4 class="project-subtitle">Visuals and callouts to address ambiguity.</h4>
+            <h4 class="project-subtitle">Visuals and Callouts to Address Ambiguity</h4>
             <p class="project-paragraph">
                 How do you make a question less ambiguous? 
-                100% of those who had participated in the user study had said that they were visual people upon asking. In thinking about when I was first given this project, I was given a lot of images to depict certain questions, like Peak Angle.
-                <br><hr>
-                <img src="img/airpic/visual.jpg" class="project-image">
-                <br><hr>
-                This gave me the idea to use visual options for the questions that could be depicted with a graphic. You can see an example of that, below. 
-                <br><hr>
-                I had also come up with a solution to allow the user to hover over the text to allow a callout to explain what the question is asking. This allows for first time users to have a backup plan before needing to call IT, while leaving the seasoned AirPic users the ability to quickly fill out the form with only minimal UI design. This concept is also shown in the image below.
+                100% of those who had participated in the user study had said that they were visual people upon being asked. During the debriefing for this project, I was given many supplemental images to help me understand different concepts. The image below explains what "Peak Angle" was asking for.
             </p>
             <hr>
-            <img src="img/airpic/callout.jpg" class="project-image">
+            <img src="img/airpic/visual.jpg" class="project-image" style="width: 100%;">
+            <hr>
+            <p class="project-paragraph">
+                This gave me the idea to use visual options for the questions that could be depicted with a graphic. You can see an example of that, below. 
+            </p>
+            <p class="project-paragraph">
+                I had also come up with a solution to allow the user to hover over the text to allow a callout to explain what the question is asking. This allows for first time users to have a backup plan before needing to call IT, while leaving the seasoned AirPic users with the ability to quickly fill out the form with only minimal UI design. This concept is also shown in the image below.
+            </p>
+            <hr>
+            <img src="img/airpic/callout.jpg" class="project-image" style="width: 100%;">
+            <hr>
             <p class="project-paragraph">
                 After also reviewing this decision with my test group, it was also recieved with very positive feedback.
             </p>
             <hr>
-            <h4 class="project-subtitle">Layout Options : Formatting and Organization</h4>
+            <h4 class="project-subtitle">Layout Options: Formatting and Organization</h4>
             <p class="project-paragraph">
-                Since it is essential I change AirPic from a software application to a Web Browser application, along with addressing the formatting issues and utilizing GSI's branding language, I had created two forms of the survey for the volunteers to choose from. The tabs are meant to show the user that there are two separate functions of the application: Air simulation and Quote Generation. The fans and bins input sections are now differentiable, addressing organization and formatting. As requested, more visual graphic options were offered for the more ambiguous questions, like bin shape, and Peak angle. Ultimately, the favorite was Option 2 with the static left sidebar.
+                Since it is essential I change AirPic from a software application to a web app, along with addressing the formatting issues and utilizing GSI's branding language, I had created two forms of the survey for the volunteers to choose from. The tabs are meant to show the user that there are two separate functions of the application: Air simulation and Quote Generation. The fan and bin input sections are now differentiable, addressing organization and formatting. As requested, more visual graphic options were offered for the more ambiguous questions, like bin shape, and Peak Angle. Ultimately, the favorite was Option 2 with the static left sidebar.
             </p>
             <hr>
-            <img src="img/airpic/option.jpg" class="project-image">
-            <p class="project-paragraph">
-                Option 1: Two Tabs, Scrolling.
+            <img src="img/airpic/option.jpg" class="project-image" style="width: 100%;">
+            <p class="project-paragraph" style="text-align: center;">
+                <i>Option 1: Two Tabs, Scrolling.</i>
             </p>
             <hr>
-            <img src="img/airpic/option2.jpg" class="project-image">
-            <p class="project-paragraph">
-                Option 2: Fixed side, right section interaction.
+            <img src="img/airpic/option2.jpg" class="project-image" style="width: 100%;">
+            <p class="project-paragraph" style="text-align: center;">
+                <i>Option 2: Fixed side, right section interaction.</i>
             </p>
             <hr> <hr>
             <h4 class="project-subtitle">The Final Interface</h4>
             <p class="project-paragraph">
-                Creating the final interface was just a matter of rebranding after recieving user feedback from all possible changes to the main problems, and applying those design decisions to the final layout. The colors are high contrast, soft black, white, and ochre, following GSI's brand. Now a dealer can access their secure and private online application, AirPic, and be able to input their client's data with ease.
+                Creating the final interface was just a matter of rebranding after receiving user feedback from all possible changes to the main problems, and applying those design decisions to the final layout. The colors are high contrast; soft black, white, and ochre, following GSI's brand. Now a dealer can access their secure and private web app, AirPic, and be able to input their client's data with ease.
             </p>
             <hr>
-            <img src="img/airpic/1.png" class="project-image">
-
+            <img src="img/airpic/1.png" class="project-image" style="width: 100%;">
+        </div>
         <footer>
             <a class="footer-link" href="https://www.linkedin.com/in/gloria-wang-6237a073/" target="_blank">
                 <i class="fab fa-linkedin"></i>
