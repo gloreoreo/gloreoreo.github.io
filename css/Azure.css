@@ -1,0 +1,23 @@
+.intro-title h1,
+.intro-title h3,
+.intro-description p {
+    color: #fff;
+}
+
+.special {
+    color: #E8F5FF;
+}
+.special:hover {
+    color: #E8F5FF;
+}
+
+.special-active {
+    color: #fff;
+}
+.special-active:hover {
+    color: #fff;
+}
+
+.intro-section {
+    background-image: linear-gradient(#7EC7FF, #0078D4);
+}
