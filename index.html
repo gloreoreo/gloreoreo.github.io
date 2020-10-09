@@ -6,11 +6,15 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <!-- For testing locally -->
 <!--        <base href="file:///Users/gloriawang/Desktop/gloreoreo.github.io/" >-->
+        <base href="file:///Users/gloriawang/Desktop/gloreoreo.github.io/" >
+        <!--GET RID OF THIS BEFORE UPDATING REAL WEBSITE-->
         <base href="/">
 
         <!-- assets  -->
         <link rel="stylesheet" type="text/css" href="css/main.css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet'>
     </head>
 
     <body>
@@ -18,7 +22,6 @@
             <div class="navbar-content container">
                 <div class="navbar-brand">
                     <a href="index.html" class="navbar-brand-color">
-                        <img src="img/logo2k17.svg">
                         GLORIA WANG
                     </a>
                 </div>
@@ -26,9 +29,8 @@
                     <a href="index.html" class="navigation-link active nav-link-active-color">
                         portfolio
                     </a>
-                    <a href="https://drive.google.com/file/d/1vO4BEtdu5Uya5fmqGLS1O4DTb7frvQVg/view?usp=sharing" class="navigation-link nav-link-color" target="_blank">
+                    <a href="resume.html" class="navigation-link nav-link-color">
                         resume
-                        <i class="fas fa-external-link-alt"></i>
                     </a>
                     <a href="articles.html" class="navigation-link nav-link-color">
                         featured articles
@@ -44,9 +46,8 @@
                             <a href="index.html" class="navigation-link active nav-link-active-color">
                                 portfolio
                             </a>
-                            <a href="https://drive.google.com/file/d/1vO4BEtdu5Uya5fmqGLS1O4DTb7frvQVg/view?usp=sharing" class="navigation-link nav-link-color" target="_blank">
-                                resume
-                                <i class="fas fa-external-link-alt"></i>
+                            <a href="resume.html" class="navigation-link nav-link-color">
+                            resume
                             </a>
                             <a href="articles.html" class="navigation-link nav-link-color">
                                 featured articles
@@ -62,27 +63,87 @@
 
         <div class="container content first-section">
             <div class="cards-grid">
+                <!-- <div class="card">
+                    <div class="card-link">
+                        <a href="projects/Discover.html" class="card-link">
+                            <img src="img/PAteams2.jpg" class="card-image">
+                            <div>
+                                <h1 style="width: 100%; margin-bottom: 0px;">Creating an app in Azure</h1>
+                                <p style="width: 100%; margin-top: 4px;">Aug 2019 | Microsoft Power Apps</p>
+                            </div>
+                        </a>                        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-link">
+                        <a href="projects/Import.html" class="card-link">
+                            <img src="img/import.jpg" class="card-image">
+                            <div>
+                                <h1 style="width: 100%; margin-bottom: 0px;">Creating an app in Azure</h1>
+                                <p style="width: 100%; margin-top: 4px;">Aug 2019 | Microsoft Power Apps</p>
+                            </div>
+                        </a>                        
+                    </div>
+                </div>-->
+                <div class="card">
+                    <div class="card-link">
+                        <a href="projects/Azure.html" class="card-link">
+                            <img src="img/Azure.jpg" class="card-image">
+                            <div class="card-description">
+                                <div>
+                                <h1 style="width: 100%; margin-bottom: 0px;">Creating an app in Azure</h1>
+                                <p style="width: 100%; margin-top: 4px;">Aug 2019 | Microsoft Power Apps</p>
+                                </div>
+                            </div>
+                        </a>
+                        
+                    </div>
+                </div>
+                
                 <div class="card">
                     <div class="card-link">
                         <a href="projects/airpic.html" class="card-link">
                             <img src="img/portfolio4.jpg" class="card-image">
+                            <div class="card-description">
+                                <div>
+                                <h1 style="margin-bottom: 0px;">AirPic</h1>
+                                <p style="margin-top: 4px;">Aug 2018 | AGCO Corporation</p>
+                                </div>
+                            </div>
                         </a>                        
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-link">
-                        <a href="projects/liftmasterlock.html" class="card-link">
-                            <img src="img/portfolio5.jpg" class="card-image">
-                        </a>                        
-                    </div>
-                </div>
+                
                 <div class="card">
                     <div class="card-link">
                         <a href="projects/goldengate.html" class="card-link">
                             <img src="img/portfolio1.jpg" class="card-image">
+                            <div class="card-description">
+                                <div>
+                                <h1 style="margin-bottom: 0px;">GoldenGate</h1>
+                                <p style="margin-top: 4px;">Aug 2017 | Chamberlain Group</p>
+                                </div>
+                            </div>
+                         </a>                        
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-link">
+                        <a href="projects/liftmasterlock.html" class="card-link">
+                            <img src="img/portfolio5.jpg" class="card-image">
+                            <div class="card-description">
+                                <div>
+                                <h1 style="margin-bottom: 0px;">LiftMasterLock</h1>
+                                <p style="margin-top: 4px;">Aug 2017 | Chamberlain Group</p>
+                                </div>
+                            </div>
                         </a>                        
                     </div>
                 </div>
+                
+                <!-- hidden and old projects  -->
+                <!-- 
                 <div class="card">
                     <div class="card-link">
                         <a href="projects/trackit.html" class="card-link">
@@ -96,10 +157,8 @@
                             <img src="img/portfolio3.jpg" class="card-image">
                         </a>
                     </div>
-                </div>
+                </div> -->
             </div>
-            <hr>
-            <hr>
         </div>
 
         <footer>
